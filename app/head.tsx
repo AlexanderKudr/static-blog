@@ -1,9 +1,9 @@
 export default function Head() {
   return (
     <>
-      <title>Static blog</title>
+      <title>Storyland</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel='shortcut icon' href='/static/favicon.ico' />
     </>
   )
 }

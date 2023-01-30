@@ -1,6 +1,6 @@
-const HomePage = () => {
-  return (
-    <h1>Hello World!</h1>
-  )
+import PreviewCard from "@/components/PreviewCard";
+import "styles/globals.css";
+
+export default function HomePage() {
+  return <PreviewCard />;
 }
-export default HomePage;
