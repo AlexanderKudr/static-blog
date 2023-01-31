@@ -2,11 +2,12 @@ import Link from "next/link";
 import getStoriesMetadata from "../functions/getStoriesMetadata";
 import Image from "next/image";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
+
 export default function PreviewCard() {
   const previews = getStoriesMetadata().map(({ ...props }) => (
     <div
-      className="p-4 mb-4 bg-gray-900/80 rounded-3xl text-slate-100 
-      shadow-inner shadow-white/20 relative"
+      className="p-4 mb-4 bg-gray-900/80 rounded-xl text-slate-100 
+      shadow-inner shadow-white/10 relative"
       key={props.key}
     >
       <Image
@@ -35,7 +36,7 @@ export default function PreviewCard() {
       </Link>
       <a
         href={`/stories/${props.slug}`}
-        className="text-slate-100 cursor-pointer flex items-center border-b
+        className="text-slate-100 cursor-pointer flex items-center border-b border-gray-400
          transtition duration-300 absolute bottom-2
           right-4 hover:text-blue-200 hover:border-b-blue-200"
       >
