@@ -2,5 +2,9 @@ import PreviewCard from "@/components/PreviewCard";
 import "styles/globals.css";
 
 export default function HomePage() {
-  return <PreviewCard />;
+  return (
+    <div className="grid gap-x-16 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+      <PreviewCard />
+    </div>
+  );
 }

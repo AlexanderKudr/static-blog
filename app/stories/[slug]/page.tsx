@@ -1,4 +1,4 @@
-import { StoryPage as props } from "@/types/stories";
+import { StoryPage as Props } from "@/types/stories";
 import getStoriesMetadata from "@/functions/getStoriesMetadata";
 import fs from "fs";
 import matter from "gray-matter";
@@ -18,8 +18,7 @@ const getStoryContent = (slug: string) => {
   return matterResult;
 };
 
-export default function StoryPage({ params }: props) {
-  const { slug } = params;
+export default function StoryPage({ params: { slug } }: Props) {
   const storyContent = getStoryContent(slug);
   const { data, content } = storyContent;
   return (
@@ -28,7 +27,7 @@ export default function StoryPage({ params }: props) {
       <Markdown>{content}</Markdown>
       <span>
         To continue reading click{" "}
-        <a href={data.link} rel="noreferrer" target="_blank">
+        <a href={`${data.link}`} rel="noreferrer" target="_blank">
           here
         </a>
       </span>
