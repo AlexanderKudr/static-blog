@@ -21,7 +21,7 @@ export default function PreviewCard() {
         <Link className="font-semibold" href={`/stories/${props.slug}`}>
           &quot;{props.title}&quot;{" "}
         </Link>{" "}
-        <span className=" font-normal">by </span>
+        <span className="font-normal">by </span>
         <Link
           className="font-semibold border-b-2 border-gray-400
            transition duration-350 hover:border-slate-600"
@@ -31,10 +31,10 @@ export default function PreviewCard() {
           {props.author}
         </Link>
       </h2>
-      <Link className="text-left" href={`/stories/${props.slug}`}>
+      <Link className="text-left px-0.5" href={`/stories/${props.slug}`}>
         <p>{props.preview}</p>
       </Link>
-      <a
+      <Link
         href={`/stories/${props.slug}`}
         className="text-slate-100 cursor-pointer flex items-center border-b border-gray-400
          transtition duration-300 absolute bottom-2
@@ -42,7 +42,7 @@ export default function PreviewCard() {
       >
         <button className="d-block">Read</button>
         <ChevronRightIcon className="ml-1 mb-[-3px]" width={14} height={14} />
-      </a>
+      </Link>
     </div>
   ));
 

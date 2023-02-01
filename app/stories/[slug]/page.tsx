@@ -3,6 +3,7 @@ import getStoriesMetadata from "@/functions/getStoriesMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
+import Link from "next/link";
 
 export const generateStaticParams = async () => {
   const stories = getStoriesMetadata();
@@ -22,15 +23,25 @@ export default function StoryPage({ params: { slug } }: Props) {
   const storyContent = getStoryContent(slug);
   const { data, content } = storyContent;
   return (
-    <div>
-      <h1>{data.title}</h1>
-      <Markdown>{content}</Markdown>
-      <span>
+    <div className="flex flex-col content-center flex-wrap">
+      <h1 className="text-gray-100 text-2xl font-bold ">{data.title}</h1>
+      <article className="text-gray-100 prose lg:prose-lg ">
+        <Markdown>{content}</Markdown>
+      </article>
+      <span className="text-gray-100 text-md">
         To continue reading click{" "}
-        <a href={`${data.link}`} rel="noreferrer" target="_blank">
+        <a
+          className=" text-blue-200 border-b border-blue-200"
+          href={`${data.link}`}
+          rel="noreferrer"
+          target="_blank"
+        >
           here
         </a>
       </span>
+      <Link href={"/"} className="text-blue-200 " rel="noreferrer">
+        <span className="border-b border-blue-200">Back to main page</span>
+      </Link>
     </div>
   );
 }
