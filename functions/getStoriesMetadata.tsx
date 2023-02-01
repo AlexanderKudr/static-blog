@@ -1,5 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
+import { v4 as uuidv4 } from 'uuid';
 import { StoriesMetadata } from "@/types/stories";
 
 export default function getStoriesMetadata(): StoriesMetadata[] {
@@ -14,7 +15,7 @@ export default function getStoriesMetadata(): StoriesMetadata[] {
       author: author,
       preview: preview,
       slug: filename.replace(`.md`, ""),
-      key: crypto.randomUUID(),
+      key: uuidv4(),
       imgSrc: imgSrc,
       link: link,
       authorLink: authorLink,
