@@ -31,7 +31,7 @@ export default function StoryPage({ params: { slug } }: Props) {
       <span className="text-gray-100 text-md">
         To continue reading click{" "}
         <a
-          className=" text-blue-200 border-b border-blue-200"
+          className=" text-blue-200 border-b border-blue-200 duration-300 hover:text-blue-400"
           href={`${data.link}`}
           rel="noreferrer"
           target="_blank"
@@ -39,8 +39,8 @@ export default function StoryPage({ params: { slug } }: Props) {
           here
         </a>
       </span>
-      <Link href={"/"} className="text-blue-200 " rel="noreferrer">
-        <span className="border-b border-blue-200">Back to main page</span>
+      <Link href={"/"} className="text-blue-200 transtition duration-300 hover:text-blue-400" rel="noreferrer">
+        <span className="border-b border-blue-200 transtition duration-300 hover:border-blue-400">Back to main page</span>
       </Link>
     </div>
   );
