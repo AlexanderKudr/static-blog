@@ -2,7 +2,7 @@
 title: "Colonel Mustard in the Kitchen Without a Hearing Aid"
 author: Laurel Hanson
 authorLink: https://blog.reedsy.com/creative-writing-prompts/author/laurel-hanson/
-preview: brief reference to ableist languageRachel stood at the kitchen sink watching the snow fall softly over the back yard, muffling the world in its white overcoat. She wanted to wrap her mind up the same snug way, but in the living room, her husband was watching some show where commentators loudly traded barbs and lobbed insults at each other. The noise was incessant. Oh! The noise, noise, noise, noise! she thought, visualizing herself poised on a snowy crag, ear cocked to the Whos down in Whoville bel...
+preview: Brief reference to ableist languageRachel stood at the kitchen sink watching the snow fall softly over the back yard, muffling the world in its white overcoat. She wanted to wrap her mind up the same snug way, but in the living room, her husband was watching some show where commentators loudly traded barbs and lobbed insults at each other. The noise was incessant. Oh! The noise, noise, noise, noise! she thought, visualizing herself poised on a snowy crag, ear cocked to the Whos down in Whoville bel...
 imgSrc: /images/1.jpg
 link: https://blog.reedsy.com/short-story/jd9z73/
 ---

@@ -25,7 +25,7 @@ export default function StoryPage({ params: { slug } }: Props) {
   return (
     <div className="flex flex-col content-center flex-wrap">
       <h1 className="text-gray-100 text-2xl font-bold ">{data.title}</h1>
-      <article className="text-gray-100 prose lg:prose-lg ">
+      <article className="text-blue-100 prose lg:prose-lg ">
         <Markdown>{content}</Markdown>
       </article>
       <span className="text-gray-100 text-md">

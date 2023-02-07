@@ -31,7 +31,7 @@ export default function PreviewCard() {
           {props.author}
         </Link>
       </h2>
-      <Link className="text-left px-0.5" href={`/stories/${props.slug}`}>
+      <Link className="text-left px-0.5 text-blue-100" href={`/stories/${props.slug}`}>
         <p>{props.preview}</p>
       </Link>
       <Link
